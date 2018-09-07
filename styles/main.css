@@ -7,6 +7,10 @@ html {
  }
 body{
 	background-color: #ffa64d;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 #welcome{
 	text-align: center;
@@ -16,6 +20,11 @@ ol {
   color: red;
   width: 75px;
   border: 1px solid black;
+}
+/*Center a list*/
+ul{
+	width: 3%;
+	margin : auto;
 }
 
 /* figure out*/
@@ -36,7 +45,7 @@ h1 {
   text-align: center;
 }
 
-p, li {
+p {
   font-size: 16px;    
   line-height: 2;
   letter-spacing: 1px;

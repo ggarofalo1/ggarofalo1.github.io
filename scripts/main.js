@@ -27,18 +27,52 @@ if (iceCream === 'chocolate') {
 
 // Run everything inside window load event handler, to make sure
 // DOM is fully loaded and styled before trying to manipulate it.
-window.addEventListener("load", function() {
-  var paragraph = document.querySelector("p"),
-    button = document.querySelector("button");
+
+
+
+/* -------sends alert through button-----*/
+ var paragraph = document.querySelector("p"),
+    button = document.querySelector("#ice");
   // Adding click event handler to button.
   button.addEventListener("click", detectWebGLContext, false);
   function detectWebGLContext () {
-    
     alert('Yay, I love chocolate ice cream!');   
   }
-}, false);
 
+/*---------Sets alert on click---------*/
 document.querySelector('#poke').onclick = function() {
     alert('Ouch! Stop poking me!');
 }
 
+
+/*-----Image change on click------*/
+var myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/space.jpg') {
+      myImage.setAttribute ('src','images/backg.png');
+    } else {
+      myImage.setAttribute ('src','images/space.jpg');
+    }
+}
+
+/*This changes user name to the website*/
+var myButton = document.querySelector('#user');
+var myHeading = document.querySelector('#heading');
+
+function setUserName() {
+  var myName = prompt('Please enter your name.');
+  localStorage.setItem('name', myName);
+  myHeading.textContent = "User: " + storedName;
+}
+//saves the user name into the webpage for future login
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  var storedName = localStorage.getItem('name');
+  myHeading.textContent = "User: " + storedName;
+}
+myButton.onclick = function() {
+  setUserName();
+}
