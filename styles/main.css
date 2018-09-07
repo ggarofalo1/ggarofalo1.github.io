@@ -7,10 +7,10 @@ html {
  }
 body{
 	background-color: #ffa64d;
-	margin-left: 70px;
-	margin-right: 70px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 #welcome{
 	text-align: center;
@@ -18,7 +18,7 @@ body{
  
 ol {
   color: red;
-  width: 75px;
+  width: 10%;
   border: 1px solid black;
 }
 /*Center a list*/
@@ -37,7 +37,10 @@ button {
 #image1{
 	/*Centers the image*/
 	display: block;
-	margin: 0 auto;
+	margin: auto;
+	max-width: 90%;
+	height: auto;
+	width: auto\9 ; /*use ie8 */
 }
 
 h1 {
@@ -58,8 +61,8 @@ p {
 /* the hover makes it only happen when a person hovers over the element*/
 a:hover{
 	color: green;
-	width: 75px;
-	border: 1px solid black;
+	width: 30%;
+	border: 2px solid black;
 }
 /*
 width (of an element)
