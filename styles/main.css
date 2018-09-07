@@ -1,0 +1,65 @@
+html {
+	/* px means 'pixels': the base font size is now 10 pixels high  */
+	font-size: 15px; 
+	/* this should be the rest of the output you got from Google fonts */
+	font-family: 'Open Sans', sans-serif; 
+	background-color: #3399ff;
+ }
+body{
+	background-color: #ffa64d;
+}
+#welcome{
+	text-align: center;
+}
+ 
+ol {
+  color: red;
+  width: 75px;
+  border: 1px solid black;
+}
+
+/* figure out*/
+button {
+  display : block;
+  margin : auto;
+  padding : 0.6em;
+}
+
+#image1{
+	/*Centers the image*/
+	display: block;
+	margin: 0 auto;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+p {
+  color: black;
+
+}
+/* the hover makes it only happen when a person hovers over the element*/
+a:hover{
+	color: green;
+	width: 75px;
+	border: 1px solid black;
+}
+/*
+width (of an element)
+background-color, the color behind an element's content and padding
+color, the color of an element's content (usually text)
+text-shadow: sets a drop shadow on the text inside an element
+display: sets the display mode of an element (don't worry about this yet)
+
+padding, the space just around the content (e.g., around paragraph text)
+border, the solid line that sits just outside the padding
+margin, the space around the outside of the element
+*/
