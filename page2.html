@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+  <link href="styles/page2.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>2D Demo in WebGL</title>
+  </head>
+  
+  <body onload="main()">
+    <h1>Drawing multiple points:</h1>
+    <ol>
+      <li>In previous example we add one point to the canvas. Now let's add multiple points.</li>
+    <li>We added an attribute with name <code><b>a_Position</b></code> to the <b><code>vertex shader</code></b> section, to draw multiple points.</li>
+    <li><code><b>initVertexBuffers</b></code> function creates vertex buffer, binds the buffer object to the target and returns the number of vertices/points.</li>
+    <li>Vertices are written into buffer using <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferData" target="_blank">gl.bufferData</a></code>(must read).</li>
+      <li> To render three poitns on to the canvas, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawArrays" target="_blank">gl.drawArrays(,..)</a> method, which takes the type of primitive to render as the <i>first argument</i>, the starting index in the array of vector points as the <i>second argument</i> and number of indices to be rendered as the <i>third argument</i>.
+      <p><b>Ex:</b> <code>  // Draw three points <br>
+  &emsp;&emsp;&emsp; gl.drawArrays(gl.POINTS, 0, 3); </code></p></li>
+    </ol>
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="https://dl.dropbox.com/s/g9fk3e1hgpy54jt/webgl-utils.js?dl=0"></script>
+    <script src="https://dl.dropbox.com/s/oo3re6x77p95cs1/webgl-debug.js?dl=0"></script>
+    <script src="https://dl.dropbox.com/s/ulhbr2s9k33u9bt/cuon-utils.js?dl=0"></script>
+	<p></p>
+	<a href="page1.html"> Link to Content</a>
+	<p></p>
+	
+	<!-- Runs the java script, must be last -->
+	<script src="scripts/page2.js"></script>
+  </body>
+</html>
