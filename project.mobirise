@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Personal Webpage",
-    "currentPage": "page1.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -58,7 +58,7 @@
       "settings": {
         "main": true,
         "title": "Home",
-        "meta_descr": "",
+        "meta_descr": "The home page",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
@@ -673,9 +673,9 @@
         }
       ]
     },
-    "page1.html": {
+    "AboutMe.html": {
       "settings": {
-        "meta_descr": "Web Site Maker Description",
+        "meta_descr": "Learn more about galen",
         "title": "About Me",
         "order": 2
       },
@@ -1248,9 +1248,9 @@
         }
       ]
     },
-    "page2.html": {
+    "Content.html": {
       "settings": {
-        "meta_descr": "Web Page Creator Description",
+        "meta_descr": "Random Links For test",
         "title": "Content",
         "order": 1
       },
